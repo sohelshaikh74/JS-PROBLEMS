@@ -1,46 +1,46 @@
-// const arr = [1, 2, 3, 2, 5, 7, 4, 6, 7]
-// // let uniqueElement = new Set(arr)
-// // console.log(uniqueElement.has(3))
-// // let uniqueArray = [...new Set(arr)] //{1,2,}
-// // let result = [...uniqueArray]
-
-// // // console.log(result)
-// // // console.log(uniqueArray.has(2))
-
-// let arr1 = [1, 2, 3]
-// let arr2 = [3, 4, 5]
-// // let uniqueArray = [...arr1, ...arr2]
-// // console.log(uniqueArray)
-// // let result = [...new Set(uniqueArray)]
-// // console.log(result)
-
-// let intersect = arr1.filter((ele) => {
-//     return new Set(arr2).has(ele)
-// })
-// // console.log(intersect)
-
-// //difference
-// let difference = arr1.filter((ele) => {
-//     return !(new Set(arr2).has(ele))
-// })
-// // console.log(difference)
-
-
-// //delete an an element using set we can also use splice() method but it is very length process
-// //remember when you are using set it is also remove duplicate element
-// let mySet = new Set(arr)
-// console.log(mySet)
-// mySet.delete(5)
-// console.log(mySet)
-
-let mySet = new Set(['delhi', 'tokyo', 'london', 'berline'])
-
-//for of loop
-// for (let value of mySet) {
-//     console.log(value)
+// var a = [10, 11, 12, 13, 14]
+// let print = (b, ...a) => {
+//     console.log(a)  //[9,10,11,12]
+//     console.log(typeof a) //argument
+//     // console.log(b)  //8
 // }
+// print(8, 9, 10, 11, 12)
 
-//forEach()
-mySet.forEach((ele) => {
-    console.log(ele)
-})
+// let arr = [1, 2, 3]
+// let arr1 = arr.map((ele) => {
+//     return el = 8; //
+// })
+// console.log(arr1) //[8,8,8]
+
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3,
+//     d: 4
+// }
+// //convert obj to an array
+// let array = Object.entries(obj)
+// console.log(array)
+
+let arr = [100, 'q', 'sohel', 10, 8, 'c']
+
+//write a funtion that seperate string,character and number
+let seperate = (arr) => {
+    let character = []
+    let string = [];
+    let number = []
+    arr.forEach(element => {
+        if (typeof element === 'number') {
+            number.push(element)
+        }
+        if (typeof element === 'string') {
+            if (element.length > 1) {
+                string.push(element)
+            } else character.push(element)
+        }
+    });
+    console.log(number)
+    console.log(string)
+    console.log(character)
+}
+seperate(arr)

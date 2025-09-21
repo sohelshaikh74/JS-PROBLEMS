@@ -24,6 +24,9 @@ function sum(a, b) {
 // sum(2.5, 2.5)
 // sum(9)
 // sum(1, "2")
+// sum(true, "2")
+// sum(null, "2")  (null-->0) ouptput-->
+//    2
 //++++explantaiton++++
 //⚡ Step by step:
 // a = 1(number)

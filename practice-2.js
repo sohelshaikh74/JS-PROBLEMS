@@ -106,3 +106,23 @@ function smallestNumber(a, b, c) {
     }
 }
 // console.log(smallestNumber(-2, "Fsd", "fsadf")) -->important
+
+
+//5th way-->
+let smallestNum = (n1, n2, n3) => {
+    n1 = Number(n1);
+    n2 = Number(n2);
+    n3 = Number(n3);
+
+    if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+        return 'please enter valid input';
+    }
+    return Math.min(n1, n2, n3);
+};
+
+console.log(smallestNum(1, 2, 3));       // 1
+console.log(smallestNum(5, 2, 1));       // 1
+console.log(smallestNum("10", "2", 30)); // 2
+console.log(smallestNum(null, 5, 3));    // 0
+console.log(smallestNum(-1, 0, 7));      // -1
+console.log(smallestNum(1, 2, "fasd"));  // please enter valid input
