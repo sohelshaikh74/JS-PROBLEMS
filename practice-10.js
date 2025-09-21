@@ -27,3 +27,5 @@ console.log(numberPower(2, -3))
 // numberPower(5, 0)
 // numberPower(0, 0)
 console.log(numberPower(5, "fad"))
+console.log(numberPower(true, 5))
+
