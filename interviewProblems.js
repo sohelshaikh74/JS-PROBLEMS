@@ -93,4 +93,24 @@ let sum = (a, b) => {
 
 
 
+// ====================== problem 1 =======================================
+// reverse each of word 
+let str = "sohel ibrahim shaikh"
+//print hkiahs miharbi lehos
+function reversString(str) {
+    let strArr = str.split(" ").reverse()
+    let result = strArr.map((ele) => {
+        return ele.split("").reverse().join("")
+    })
+    return result.join(" ")
+}
+// console.log(reversString(str))
 
+
+if ([] == []) {
+    console.log("hello")
+} else {
+    console.log("no one is present")
+}
+
+//output hello
