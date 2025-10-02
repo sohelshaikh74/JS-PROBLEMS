@@ -1,5 +1,5 @@
 // ***********PROBLEM-16***************
-//=============Write a function  that count the  words in a given sentenc ================
+//=============Write a function  that count the  words in a given sentence ================
 // eg. "This is the sentence"  == >  4 word
 // eg. "What is the day today" ==> 5 word,
 
