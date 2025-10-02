@@ -50,9 +50,10 @@ function isArmstrongNumber2(inputNumber) {
     digit.forEach((d) => {
         sum = sum + Math.pow(d, length)
     })
-    if (sum === inputNumber) {
-        return true
-    } return false;
+    // if (sum === inputNumber) {
+    //     return true
+    // } return false;
+    return sum === inputNumber
 }
 console.log(isArmstrongNumber2(153))
 console.log(isArmstrongNumber2(243))
