@@ -22,7 +22,7 @@
 // // seperate(arr)
 
 // //================== problem --> 2 ==================
-// // merge two object 
+// // merge two object
 // let a = { a: 1 }; let b = { b: 2 }
 // // console.log({ ...a, ...b })
 
@@ -94,7 +94,7 @@
 
 
 // // ====================== problem 1 =======================================
-// // reverse each of word 
+// // reverse each of word
 // let str = "sohel ibrahim shaikh"
 // //print hkiahs miharbi lehos
 // function reversString(str) {
@@ -116,5 +116,50 @@
 // //output hello
 
 
-// ================================new one ========================
-console.log("john" > 1);
+// ================================new one(IMP) ========================
+//Problems ==>print the longest word from the sentence
+//Problems ==>print the second longest word from the sentence
+// const str = "my name is sohel shaikh"
+// let secondLongestWord = (str) => {
+//     let wordsArr = str.split(" ");
+//     let longWord = "";
+//     let secondLongWord = "";
+//     for (let i = 0; i < wordsArr.length; i++) {
+//         if (wordsArr[i].length > longWord.length) {
+//             secondLongWord = longWord;
+//             longWord = wordsArr[i];
+//         } else if (wordsArr[i].length > secondLongWord.length && wordsArr[i].length < longWord.length) {
+//             secondLongWord = wordsArr[i]
+//         }
+//     }
+//     return secondLongWord
+// }
+// console.log((secondLongestWord(str)))
+
+// //To find out the summation to get 13
+// const arr = [10, 18, 7, 6, 11]
+// const summation = (arr) => {
+//     let sum = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === 13) {
+//             return indexOf(arr[i])
+//         }
+
+//     }
+// }
+// console.log(summation(arr))
+
+// console.log(isNaN("fsad")) //true
+
+// ===new one ===
+// function check() {
+//     return 100;
+// }
+// var check;
+// console.log(check);
+
+
+console.log([1, 2, 3, 4, 5].map(e => {
+    if (e > 0) return;   //[undefined,undefined,undefined,undefined,undefined]
+    return e * 10
+}));
