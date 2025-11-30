@@ -1,5 +1,5 @@
 // ***********PROBLEM-14***************
-//=============Write a function  that calculates and prints the simple interest on loan amount ================
+//============= Write a function  that calculates and prints the simple interest on loan amount ================
 //input:
 // principle amount
 //interest rate (yeraly)

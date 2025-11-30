@@ -1,5 +1,5 @@
 // ***********PROBLEM-11***************
-//=============Write a function  that counts and prints the number of  vowels and  consonants in a given string ================
+//============= Write a function  that counts and prints the number of  vowels and  consonants in a given string ================
 //input:string
 //Return : Vowel and consonunt count
 //Handle space chareacter 
