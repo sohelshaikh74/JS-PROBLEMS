@@ -55,7 +55,8 @@ function addTwoNumber(a, b) {
 
 
 // ****************** PROBLEM-3 *************************
-// ==========================write a function that calculates and print the area of rectangle gives it length and width=================
+// ========================== write a function that calculates and print 
+// the area of rectangle gives it length and width =================
 // +++ formula Arae = length * width  +++++++++++ REMEMBER THIS FORMULA
 function calcRectangle(length, width) {
     if (length <= 0) {

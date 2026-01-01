@@ -37,3 +37,18 @@ function calcSumOfDigit2(inputNumber) {
     }
 }
 console.log(calcSumOfDigit2(12))
+
+//3rd way ->
+let num = 123;
+num = String(num);
+let sums = 0;
+for (let n of num) {
+    sums = (sums + n * 1);
+}
+console.log(sums);
+
+//4th way->
+let nums = 123;
+const sum2 = [...String(num)];
+let result = sum2.reduce((acc, digit) => Number(digit) + acc, 0);
+console.log(result);
