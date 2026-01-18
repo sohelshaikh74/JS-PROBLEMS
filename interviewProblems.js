@@ -88,11 +88,6 @@
 // // ⚡Pro tip: If you want to compare arrays by value, you need to manually check their contents, e.g. with .every() or JSON.stringify().
 
 
-
-
-
-
-
 // // ====================== problem 1 =======================================
 // // reverse each of word
 // let str = "sohel ibrahim shaikh"
@@ -159,7 +154,31 @@
 // console.log(check);
 
 
-console.log([1, 2, 3, 4, 5].map(e => {
-    if (e > 0) return;   //[undefined,undefined,undefined,undefined,undefined]
-    return e * 10
-}));
+// console.log([1, 2, 3, 4, 5].map(e => {
+//     if (e > 0) return;   //[undefined,undefined,undefined,undefined,undefined]
+//     return e * 10
+// }));
+
+// ====================================== new one  ==========================
+// myFun();  // Error
+// var myFun = function () {
+//     console.log("I am here ")
+// }
+// myFun() // sohel shaikh
+// function myFun() {
+//     console.log("sohel shaikh")
+// }
+// myFun() // i am there
+// function myFun() {
+//     console.log("I am there ")
+// }
+// myFun(); // i am there
+
+// ######## new question
+// 'use strict' //--> try with non strict mode
+// abc = 1000;
+// console.log(abc); 
+
+//##### new q
+abc = 1000;
+console.log(abc())

@@ -58,3 +58,25 @@ let checkVoewlsAndConsonantCount2 = (inputString) => {
 console.log(checkVoewlsAndConsonantCount2("john"))
 console.log(checkVoewlsAndConsonantCount2("john123!")) //--> very important //ignored symbol and number
 // console.log(checkVoewlsAndConsonantCount())
+
+//3rd way->
+let str = "Javascript is very awesome langauge123";
+function checkVoewlsAndConsonantCount(str) {
+    let strArr = str.split(" ");
+    let voewls = 0;
+    let consonant = 0;
+    for (let i = 0; i < strArr.length; i++) {
+        let word = strArr[i];
+        for (let w of word.toLowerCase()) {
+            if (w >= 'a' && w <= 'z') {
+                if (w == 'a' || w == 'e' || w == 'i' || w == 'o' || w == 'u') {
+                    voewls++
+                } else {
+                    consonant++
+                }
+            }
+        }
+    }
+    return { voewls, consonant };
+}
+console.log(checkVoewlsAndConsonantCount(str));
