@@ -42,3 +42,19 @@ function countWordsInSentence2(str) {
     return words.length
 }
 console.log(countWordsInSentence("this is a very beautiful sentence in the world"))
+
+//2nd way->
+function countWordInSentece(st) {
+    let wordsArr = st.trim().split(" ");
+    console.log(wordsArr);
+    let count = 0;
+    for (let i = 0; i < wordsArr.length; i++) {
+        if (wordsArr[i].trim() == '') {
+            continue;
+        } else {
+            count++
+        }
+    }
+    console.log(`words:${count}`)
+}
+countWordInSentece(st1);
