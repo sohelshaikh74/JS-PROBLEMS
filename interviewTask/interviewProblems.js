@@ -362,3 +362,4 @@ function findIndex(arr) {
     return index
 }
 console.log(findIndex(arr));
+    
