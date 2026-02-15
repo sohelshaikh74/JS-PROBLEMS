@@ -194,11 +194,11 @@ let z = a++; //100++
 // console.log(a + z);//101+100=201
 
 // #######
-let str = "my name is sohel";
+// let str = "my name is sohel";
 //reverse each word string -> output raja-> ajar
 //1st way->
-let str = "my name is sohel";
-console.log(str);
+// let str = "my name is sohel";
+// console.log(str);
 function revEachWord(str) {
     if (typeof str !== 'string') {
         console.log('please enter valid input')
@@ -254,112 +254,158 @@ p = p - q;//7-4=3
 // console.log('after swaping', p.q)
 
 // ####
-let a1 = [1, 2, 3, 4, 5];
-let a2 = [3, 4, 5, 6, 7]
-//find the interseciton of two array
-function interSection(a, b) {
-    let result = a.filter((ele) => {
-        return b.includes(ele);
-    })
-    console.log(result)
-}
-// interSection(a1,a2);
+// let a1 = [1, 2, 3, 4, 5];
+// let a2 = [3, 4, 5, 6, 7]
+// //find the interseciton of two array
+// function interSection(a, b) {
+//     let result = a.filter((ele) => {
+//         return b.includes(ele);
+//     })
+//     console.log(result)
+// }
+// // interSection(a1,a2);
 
-//####
-let a3 = [1, 2, 3, 4, 5]
-//================================================================= new one =============================
-console.log(100 + '8' + 20) //1028
+// //####
+// let a3 = [1, 2, 3, 4, 5]
+// //================================================================= new one =============================
+// console.log(100 + '8' + 20) //1028
 
-//####
-let abc = 100;
-if (function xyz() { }) {
-    abc = abc - typeof (xyz)//function => abc - function => NaN
-}
-console.log(abc) //NaN (get an error)
+// //####
+// let abc = 100;
+// if (function xyz() { }) {
+//     abc = abc - typeof (xyz)//function => abc - function => NaN
+// }
+// console.log(abc) //NaN (get an error)
 
 
-// =============================================== new one =======================
-// #####
-// let m = 5;
-// m++;
-// console.log(m);
-
+// // =============================================== new one =======================
 // // #####
-// let n = 6;
-// n--;
-// console.log(n);
+// // let m = 5;
+// // m++;
+// // console.log(m);
 
-//##tricky one
-// let x = 5;
-// let y = 5++;
-// console.log(x, y);
-//above program are incorrect
-//#Why wrong?
-// ++ works only on variables
-// You cannot increment a literal value (5)
-//error--> Uncaught SyntaxError: Invalid left-hand side expression in postfix operation
+// // // #####
+// // let n = 6;
+// // n--;
+// // console.log(n);
 
-// let p = 5;
-// let q = ++p;//
-// console.log(p, q); //6,6
+// //##tricky one
+// // let x = 5;
+// // let y = 5++;
+// // console.log(x, y);
+// //above program are incorrect
+// //#Why wrong?
+// // ++ works only on variables
+// // You cannot increment a literal value (5)
+// //error--> Uncaught SyntaxError: Invalid left-hand side expression in postfix operation
 
-// let m = 10;
-// let n = m--;
-// console.log(m, n); //10,9
+// // let p = 5;
+// // let q = ++p;//
+// // console.log(p, q); //6,6
 
-// #level-3
-// let a = 5;
-// let b = a++ + ++a;
-// console.log(a, b);//7,12
+// // let m = 10;
+// // let n = m--;
+// // console.log(m, n); //10,9
 
-// let x = 10;
-// let y = ++x + x++ + --x;  //11 + 11 + 11 =>33
-// console.log(x, y);///11,33
+// // #level-3
+// // let a = 5;
+// // let b = a++ + ++a;
+// // console.log(a, b);//7,12
 
-// let p = 3;
-// let q = p++ + p++ + ++p; //3 + 4 + 6
-// console.log(p, q); //6, 13
+// // let x = 10;
+// // let y = ++x + x++ + --x;  //11 + 11 + 11 =>33
+// // console.log(x, y);///11,33
 
-// =========================================== new one ======================
-// ###new
-// console.log([] == ![]);
+// // let p = 3;
+// // let q = p++ + p++ + ++p; //3 + 4 + 6
+// // console.log(p, q); //6, 13
 
-// ###new
-// function fnc() {
-//     return
-//     {
-//         name: "sohel"
+// // =========================================== new one ======================
+// // ###new
+// // console.log([] == ![]);
+
+// // ###new
+// // function fnc() {
+// //     return
+// //     {
+// //         name: "sohel"
+// //     }
+// // }
+// // console.log(fnc()); // undefiend
+
+// // ### important ==========
+// const arr = [10, 12, 18, 6, 4];
+// // to bring the output as 30 first at sumation of two numebrs the two number
+// //  which bring out that goal which is 30 that indysis should be the ouput
+// // output -> 30 and index 1 and 2
+
+// function sumAndIndex(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] + arr[j] === 30) {
+//                 console.log(30, i, j);
+//                 return;
+//             }
+//         }
 //     }
 // }
-// console.log(fnc()); // undefiend
+// sumAndIndex(arr)
 
-// ### important ==========
-const arr = [10, 12, 18, 6, 4];
-// to bring the output as 30 first at sumation of two numebrs the two number
-//  which bring out that goal which is 30 that indysis should be the ouput
-// output -> 30 and index 1 and 2
+// //2nd way->
+// function findIndex(arr) {
+//     let index = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] + arr[i + 1] === 30) {
+//             index = [i, i + 1]
+//         }
+//     }
+//     return index
+// }
+// console.log(findIndex(arr));
 
-function sumAndIndex(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] + arr[j] === 30) {
-                console.log(30, i, j);
-                return;
-            }
-        }
-    }
-}
-sumAndIndex(arr)
 
-//2nd way->
-function findIndex(arr) {
-    let index = []
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] + arr[i + 1] === 30) {
-            index = [i, i + 1]
-        }
-    }
-    return index
-}
-console.log(findIndex(arr));
-    
+// ====================================================== NEW ONE ====================================================
+//###imp
+//seperage each element into an array if string then it will in same array, and if number then in one array and if character like
+// let array2 = ['john', 10, 500, 'lite', 'c', '300'];
+// function seperateEle(arr) {
+//     let stringArr = [];
+//     let charArr = [];
+//     let numArr = [];
+//     for (let item of arr) {
+//         if (typeof item === 'number') {
+//             numArr.push(item)
+//         } else if (typeof item === 'string') {
+//             if (!isNaN(item)) {
+//                 numArr.push(Number(item))
+//             }
+//             else if (item.length === 1) {
+//                 charArr.push(item);
+//             } else {
+//                 stringArr.push(item)
+//             }
+//         }
+//     }
+//     return { stringArr, charArr, numArr };
+// }
+// console.log(seperateEle(array2));
+
+
+//###check all the chracter of the second element is the present in the first element 
+// let array = ['john', 'dent'];
+// function isPresentInFirstEle(arr) {
+//     const [a, b] = arr;
+//     for (let i = 0; i < b.length; i++) {
+//         if (!a.includes(b[i])) {
+//             return false;
+//         }
+//         return true;
+//     }
+// }
+// console.log(
+//     isPresentInFirstEle(array)
+
+// )
+
+// ####
+console.log('john' - 100); //NaN
