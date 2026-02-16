@@ -58,3 +58,12 @@ function countWordInSentece(st) {
     console.log(`words:${count}`)
 }
 countWordInSentece(st1);
+
+//3rd way ->
+function countWordInSentnec(sentence) {
+    return sentence
+        .trim()
+        .split(/\s+/)
+        .filter(word => word.length > 0).length;
+}
+console.log(countWordInSentnec("This is the   javascript"))

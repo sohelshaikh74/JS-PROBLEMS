@@ -1,13 +1,18 @@
-const checkFactor = (num) => {
-    if (!Number.isInteger(num) || num <= 0) {
-        throw new Error("input must be positive number")
+function isArmStrong(input) {
+    if (!Number.isInteger(input) || input <= 0) return 'input must be valid '
+    power = input.toString().length;
+    let sum = 0;
+    let temp = input;
+    while (temp > 0) {
+        let digit = temp % 10;
+        sum += digit ** power;
+        temp = Math.floor(temp / 10);
     }
-    let factor = [];
-    for (let i = 1; i <= num; i++) {
-        if (num % i === 0) {
-            factor.push(i)
-        }
-    }
-    return factor;
+    return sum === input;
 }
-console.log(checkFactor(7))
+console.log(
+    isArmStrong(153)
+)
+console.log(
+    isArmStrong(9474)
+)

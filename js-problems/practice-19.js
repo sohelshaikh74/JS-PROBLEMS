@@ -57,3 +57,22 @@ function isArmstrongNumber2(inputNumber) {
 }
 console.log(isArmstrongNumber2(153))
 console.log(isArmstrongNumber2(243))
+
+
+// correct way for dynamic power
+function isArmStrong(inputNumber) {
+    if (!Number.isInteger(inputNumber) || inputNumber <= 0) {
+        return "Input must be poisitive number";
+    }
+    let power = inputNumber.toString().length;
+    let temp = inputNumber;
+    let sum = 0;
+    while (temp > 0) {
+        let digit = temp % 10;
+        sum += digit ** power;
+        temp = Math.floor(temp / 10);
+    }
+    return sum === inputNumber;
+}
+console.log(isArmStrong(153));
+console.log(isArmStrong(9474));

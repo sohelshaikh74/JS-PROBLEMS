@@ -391,7 +391,7 @@ p = p - q;//7-4=3
 // console.log(seperateEle(array2));
 
 
-//###check all the chracter of the second element is the present in the first element 
+//###check all the chracter of the second element is the present in the first element
 // let array = ['john', 'dent'];
 // function isPresentInFirstEle(arr) {
 //     const [a, b] = arr;
@@ -408,4 +408,20 @@ p = p - q;//7-4=3
 // )
 
 // ####
-console.log('john' - 100); //NaN
+// console.log('john' - 100); //NaN
+
+
+// ======================== new one (VIMP)===============
+const arr = [18, 10, 12, 15, 9, 11];
+//sort this array without using built in method
+for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = 0; j < arr.length - 1 - i; j++) {
+        if (arr[j] > arr[j + 1]) {
+            //swap
+            let temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
+}
+// console.log(arr);
