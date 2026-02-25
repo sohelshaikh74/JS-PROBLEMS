@@ -19,3 +19,4 @@ function isStrongPassword(password) {
 }
 console.log(isStrongPassword("!1Sohelsh"));
 console.log(isStrongPassword("423423"));
+console.log(isStrongPassword("423423"));
