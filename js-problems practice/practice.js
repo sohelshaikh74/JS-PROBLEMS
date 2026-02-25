@@ -1,18 +1,20 @@
-function isArmStrong(input) {
-    if (!Number.isInteger(input) || input <= 0) return 'input must be valid '
-    power = input.toString().length;
-    let sum = 0;
-    let temp = input;
-    while (temp > 0) {
-        let digit = temp % 10;
-        sum += digit ** power;
-        temp = Math.floor(temp / 10);
+//write a program that check if the provided password is strong or not
+function isStrongPassword(password) {
+    if (typeof password !== 'string') return "enter valid input"
+    if (password.length <= 8) return "password should contain 8 characters";
+    let specialChar = '-+=!@';
+    let hasSpecial = false;
+    let hasNumber = false;
+    let hasUpper = false;
+    let hasLower = false;
+    for (let i = 0; i < password.length; i++) {
+        let ch = password[i];
+        let code = ch.charCodeAt(0);
+        if (code >= 97 && code <= 122) hasLower = true;
+        if (code >= 65 && code <= 90) hasUpper = true;
+        if (code >= 48 && code <= 57) hasNumber = true;
+        if (specialChar.indexOf(ch)) hasSpecial = true;
     }
-    return sum === input;
+    return hasLower && hasUpper && hasNumber && hasSpecial;
 }
-console.log(
-    isArmStrong(153)
-)
-console.log(
-    isArmStrong(9474)
-)
+console.log(isStrongPassword("!1Sohelsh"));
