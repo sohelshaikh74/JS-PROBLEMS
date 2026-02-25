@@ -18,3 +18,4 @@ function isStrongPassword(password) {
     return hasLower && hasUpper && hasNumber && hasSpecial;
 }
 console.log(isStrongPassword("!1Sohelsh"));
+console.log(isStrongPassword("423423"));
