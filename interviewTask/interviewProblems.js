@@ -425,3 +425,25 @@ for (let i = 0; i < arr.length - 1; i++) {
     }
 }
 // console.log(arr);
+
+//=============== new one ================
+const abc = [15, 20, 35, 60, 30]  // three element which give us 125 [35,60,30] and there indexes
+let target = 125;
+function findThreeSum(arr, target) {
+    for (let i = 0; i < arr.length - 2; i++) {
+        for (let j = i + 1; j < arr.length - 1; j++) {
+            for (let k = j + 1; k < arr.length; k++) {
+                if (arr[i] + arr[j] + arr[k] === target) {
+                    return {
+                        value: [arr[i], arr[j], arr[k]],
+                        index: [i, j, k]
+                    }
+                }
+            }
+        }
+    }
+}
+console.log(
+
+    findThreeSum(abc, target)
+)
