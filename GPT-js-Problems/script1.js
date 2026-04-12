@@ -12,6 +12,14 @@
 // //     }
 // // }
 // // // console.log(uniqueArray2);
+// third way->
+// let result = arr.reduce((acc,ele)=>{
+//     if(!acc.includes(ele)){
+//         acc.push(ele);
+//     }
+//     return acc;
+// },[])
+
 
 // // // Q2 – Count frequency of characters
 // // let str = "programming";
