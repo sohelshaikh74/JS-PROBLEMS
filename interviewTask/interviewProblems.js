@@ -447,3 +447,21 @@ console.log(
 
     findThreeSum(abc, target)
 )
+
+
+// ========================== new One=================
+//seperate character and number
+const array = [10, 8, 'c', 11, 'q', 5];
+let stringArr = [];
+let numArr = [];
+for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] === 'string') {
+        if (array[i].length === 1) {
+            stringArr.push(arr[i])
+        }
+    } else {
+        numArr.push(arr[i]);
+    }
+}
+console.log(stringArr);
+console.log(numArr);
