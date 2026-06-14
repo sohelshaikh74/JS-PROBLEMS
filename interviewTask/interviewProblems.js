@@ -29,7 +29,7 @@
 
 
 // // =================== problemn --> 3===============
-// //using funciton currign print sum of two number
+// //using funciton curryign print sum of two number
 
 // let sum = (a, b) => {
 //     if (a && b) return a + b;
@@ -465,3 +465,42 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log(stringArr);
 console.log(numArr);
+
+
+
+// ==================== new one
+// find the longest word from the sentence
+// let str  = "My name is sohel shaikh";
+// //find the longest word in the sentence
+// function longWord(str){
+//     let strArr = str.split(" ");
+//     let lngWord = strArr[0];
+//     for(let i=1;i<strArr.length;i++){
+//         if(strArr[i].length > lngWord.length){
+//             lngWord = strArr[i];
+//         }
+//     }
+//     return lngWord;
+// }
+// console.log(longWord(str));
+//###########do without any built in method
+
+let str = "My name is sohel shaikh";
+
+// function longWord(str){
+//     let currentWord = "";
+//     let longestWord = "";
+//     for(let i=0;i<=str.length;i++){
+//         if(str[i] !== ' ' && i < str.length){
+//             currentWord += str[i];
+//         }else{
+//             if(currentWord.length > longestWord.length){
+//                 longestWord = currentWord
+//             }
+//             currentWord ="";
+//         }
+//     }
+//     return longestWord;
+// }
+// console.log(longWord(str))
+

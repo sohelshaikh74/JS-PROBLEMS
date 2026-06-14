@@ -1,10 +1,18 @@
-let str = "hello";
+let str = "My name is sohel shaikh";
 
-function reverseString(str) {
-    let rev = "";
-    for (let i = str.length - 1; i >= 0; i--) {
-        rev += str[i]
+function longWord(str) {
+    let currentWord = "";
+    let longestWord = "";
+    for (let i = 0; i <= str.length; i++) {
+        if (str[i] !== ' ' && i < str.length) {
+            currentWord += str[i];
+        } else {
+            if (currentWord.length > longestWord) {
+                longestWord = currentWord
+            }
+            currentWord = "";
+        }
     }
-    console.log(rev)
+    return longestWord;
 }
-reverseString(str)
+console.log(longWord(str))
