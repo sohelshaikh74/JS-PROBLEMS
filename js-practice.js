@@ -1,18 +1,22 @@
-let str = "My name is sohel shaikh";
+// print the longest word from the sentence
+//print the second longest word from the sentence
 
-function longWord(str) {
-    let currentWord = "";
-    let longestWord = "";
-    for (let i = 0; i <= str.length; i++) {
-        if (str[i] !== ' ' && i < str.length) {
-            currentWord += str[i];
-        } else {
-            if (currentWord.length > longestWord) {
-                longestWord = currentWord
-            }
-            currentWord = "";
+
+let str = "my name is sohel shaikh"; //
+
+function secondLongword(str) {
+    let longWord = "";
+    let secLangWord = "";
+    let wordArr = str.split(" ");
+    for (let i = 0; i < wordArr.length; i++) {
+        if (wordArr[i].length > longWord.length) {
+            secLangWord = longWord;
+            longWord = wordArr[i];
+        } else if (wordArr[i].length > secLangWord.length && wordArr[i].length < longWord.length) {
+            secLangWord = wordArr[i];
         }
     }
-    return longestWord;
+    return secLangWord;
 }
-console.log(longWord(str))
+console.log(secondLongword(str));
+
