@@ -504,3 +504,21 @@ let str = "My name is sohel shaikh";
 // }
 // console.log(longWord(str))
 
+// ======================== new one ==================
+// const arr = [100, -200, 300, -400, -800];
+// //bring out the negative number from an array using function declaration/function expression
+// function negativeNumber(arr) {
+//     let result = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] <= 0) {
+//             result.push(arr[i]);
+//         }
+//     }
+//     return result;
+// }
+// console.log(negativeNumber(arr));
+
+// in one line
+
+// let result = arr.filter((ele) => { if (ele < 0) { return ele } });
+// console.log(result);
