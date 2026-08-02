@@ -522,3 +522,12 @@ let str = "My name is sohel shaikh";
 
 // let result = arr.filter((ele) => { if (ele < 0) { return ele } });
 // console.log(result);
+
+
+// ======================== new one =============
+// Return Unique Element from an array
+const arr = [100, 50, 46, 30, 50, 70, 100, 10];
+//with built in function and without built funciton
+// console.log([...new Set(arr)]);
+
+console.log()
